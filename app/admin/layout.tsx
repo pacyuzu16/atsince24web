@@ -8,13 +8,13 @@ export const metadata = {
   description: "Admin dashboard for @since24 website",
 }
 
-export default function AdminLayout({
+export default async function AdminLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   // Server-side authentication check
-  const cookieStore = cookies()
+  const cookieStore = await cookies()
   const isAuthenticated = cookieStore.get("isAuthenticated")?.value === "true"
 
   if (!isAuthenticated) {

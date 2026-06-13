@@ -37,6 +37,7 @@ const testimonials: Testimonial[] = [
 
 export default function Testimonials() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
+  const [isPaused, setIsPaused] = useState(false)
 
   const nextTestimonial = () => {
     setCurrentTestimonial((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1))
@@ -46,13 +47,12 @@ export default function Testimonials() {
     setCurrentTestimonial((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1))
   }
 
+  // Auto-advance: pauses on hover/focus; timer resets on manual navigation.
   useEffect(() => {
-    const interval = setInterval(() => {
-      nextTestimonial()
-    }, 8000)
-
+    if (isPaused) return
+    const interval = setInterval(nextTestimonial, 8000)
     return () => clearInterval(interval)
-  }, [])
+  }, [currentTestimonial, isPaused])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -84,7 +84,13 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="relative max-w-4xl mx-auto bg-white rounded-lg p-8 md:p-12 shadow-lg">
+        <div
+          className="relative max-w-4xl mx-auto bg-white rounded-lg p-8 md:p-12 shadow-lg"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+          onFocusCapture={() => setIsPaused(true)}
+          onBlurCapture={() => setIsPaused(false)}
+        >
           <Quote className="absolute top-8 left-8 h-12 w-12 text-brand-blue opacity-20" />
 
           <div className="relative z-10">

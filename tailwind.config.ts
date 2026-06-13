@@ -59,6 +59,9 @@ const config: Config = {
         "brand-light": "#93c5fd",
         "brand-dark": "#1e3a8a",
         "brand-accent": "#3b82f6",
+        "brand-gold": "#f59e0b",
+        "brand-teal": "#14b8a6",
+        "brand-coral": "#f43f5e",
       },
       borderRadius: {
         lg: "var(--radius)",

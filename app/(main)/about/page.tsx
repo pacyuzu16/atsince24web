@@ -70,7 +70,14 @@ const teamMembers: TeamMember[] = [
       email: "atsince24@gmail.com",
       // linkedin: "https://linkedin.com/in/aimesincere",
     },
-  }
+  },
+  {
+    id: "cyuzuzo-pacifique",
+    name: "CYUZUZO PACIFIQUE",
+    role: "IT Specialist",
+    bio: "Manages @since24's technology and web presence, keeping our digital platforms and infrastructure running smoothly, securely, and reliably.",
+    image: "/placeholder.svg?height=400&width=400",
+  },
 ]
 
 export default function AboutPage() {
@@ -303,6 +310,12 @@ export default function AboutPage() {
                   "name": "Aimé Sincere NIYONKURU",
                   "jobTitle": "Founder & CEO",
                   "description": "With years of experience, I Sincere founded @since24 with a vision to simplify everyday living through innovative technology."
+                },
+                {
+                  "@type": "Person",
+                  "name": "CYUZUZO PACIFIQUE",
+                  "jobTitle": "IT Specialist",
+                  "description": "Manages @since24's technology and web presence, keeping our digital platforms and infrastructure running smoothly, securely, and reliably."
                 }
               ],
               "serviceArea": {

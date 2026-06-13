@@ -128,7 +128,7 @@ export default function ProductsPage() {
                 )}
                 <div className="grid grid-cols-1 md:grid-cols-2">
                   <div className="relative h-64 md:h-auto">
-                    <Image src={currentProducts[0].image || "/placeholder.svg"} alt={currentProducts[0].name} fill className="object-fill h-full w-full" />
+                    <Image src={currentProducts[0].image || "/placeholder.svg"} alt={currentProducts[0].name} fill className="object-cover h-full w-full" />
                   </div>
                   <div className="p-8">
                     <h2 className="text-2xl font-medium text-brand-dark mb-2">{currentProducts[0].name}</h2>

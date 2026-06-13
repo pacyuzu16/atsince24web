@@ -296,8 +296,9 @@ const products: { [key: string]: Product } = {
   },
 }
 
-export default function ProductPage({ params }: { params: { slug: string } }) {
-  const product = products[params.slug]
+export default async function ProductPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const product = products[slug]
 
   if (!product) {
     notFound()
@@ -305,10 +306,10 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
 
   // Function to create WhatsApp message with product details and website link
   const createWhatsAppMessage = (productName: string, variantName?: string) => {
-    const productUrl = `https://since24.com/products/${params.slug}`
+    const productUrl = `https://atsince24.com/products/${slug}`
     const message = `Hello, I'm interested in the ${productName}${variantName ? ` (${variantName})` : ""
       }. Could you provide more information about pricing and availability? I found it on your website: ${productUrl}`
-    return `https://wa.me/+250788825011?text=${encodeURIComponent(message)}`
+    return `https://wa.me/250788825011?text=${encodeURIComponent(message)}`
   }
 
   return (

@@ -52,6 +52,7 @@ const slides: Slide[] = [
 
 export default function HeroCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0)
+  const [isPaused, setIsPaused] = useState(false)
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1))
@@ -61,16 +62,22 @@ export default function HeroCarousel() {
     setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1))
   }
 
+  // Auto-advance: pauses on hover/focus, and the timer resets whenever the
+  // slide changes (so manual navigation gives a full interval before the next).
   useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide()
-    }, 5000)
-
+    if (isPaused) return
+    const interval = setInterval(nextSlide, 5000)
     return () => clearInterval(interval)
-  }, [])
+  }, [currentSlide, isPaused])
 
   return (
-    <div className="relative h-[94vh] w-full overflow-hidden pt-20">
+    <div
+      className="relative h-[94vh] w-full overflow-hidden pt-20"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+      onFocusCapture={() => setIsPaused(true)}
+      onBlurCapture={() => setIsPaused(false)}
+    >
       {slides.map((slide, index) => (
         <div
           key={slide.id}

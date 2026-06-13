@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { cn } from "@/lib/utils"
+import { useToast } from "@/components/ui/use-toast"
 
 interface FAQ {
   id: string
@@ -67,6 +68,7 @@ export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [expandedFAQs, setExpandedFAQs] = useState<string[]>([])
+  const { toast } = useToast()
 
   const toggleFAQ = (id: string) => {
     setExpandedFAQs((prev) => (prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]))
@@ -99,9 +101,17 @@ export default function ContactPage() {
           subject: "",
           message: "",
         })
+      } else {
+        throw new Error('Failed to submit form')
       }
     } catch (error) {
       console.error('Error submitting form:', error)
+      toast({
+        title: "Message not sent",
+        description: "Something went wrong while sending your message. Please try again, or reach us at atsince24@gmail.com.",
+        variant: "destructive",
+        duration: 5000,
+      })
     } finally {
       setIsSubmitting(false)
     }
@@ -303,6 +313,7 @@ export default function ContactPage() {
                 <div key={faq.id} className="bg-gray-50 rounded-lg overflow-hidden shadow-sm border border-gray-100">
                   <button
                     onClick={() => toggleFAQ(faq.id)}
+                    aria-expanded={expandedFAQs.includes(faq.id)}
                     className="w-full flex items-center justify-between p-6 text-left"
                   >
                     <h3 className="text-lg font-medium text-gray-900">{faq.question}</h3>

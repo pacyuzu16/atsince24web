@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useRouter, usePathname } from "next/navigation"
 import Link from "next/link"
 import Image from "next/image"
@@ -32,6 +32,30 @@ function AdminDashboard({ children }: AdminDashboardProps) {
   const pathname = usePathname()
   const { toast } = useToast()
 
+  // Lock body scroll and allow Escape to close while the mobile sidebar is open
+  useEffect(() => {
+    if (isSidebarOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = ""
+    }
+
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsSidebarOpen(false)
+    }
+    window.addEventListener("keydown", handleEscape)
+
+    return () => {
+      window.removeEventListener("keydown", handleEscape)
+      document.body.style.overflow = ""
+    }
+  }, [isSidebarOpen])
+
+  // Close the mobile sidebar whenever the route changes
+  useEffect(() => {
+    setIsSidebarOpen(false)
+  }, [pathname])
+
   const handleLogout = () => {
     // Set cookie for server-side auth check
     document.cookie = "isAuthenticated=false; path=/; max-age=0"
@@ -61,6 +85,16 @@ function AdminDashboard({ children }: AdminDashboardProps) {
           {isSidebarOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </Button>
       </div>
+
+      {/* Mobile sidebar backdrop */}
+      <div
+        className={cn(
+          "fixed inset-0 z-30 bg-black/40 backdrop-blur-sm transition-opacity duration-300 lg:hidden",
+          isSidebarOpen ? "opacity-100" : "opacity-0 pointer-events-none",
+        )}
+        onClick={() => setIsSidebarOpen(false)}
+        aria-hidden="true"
+      />
 
       {/* Sidebar */}
       <aside

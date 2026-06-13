@@ -118,8 +118,9 @@ const productMetadata: ProductMetadata = {
     }
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-    const product = productMetadata[params.slug]
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+    const { slug } = await params
+    const product = productMetadata[slug]
 
     if (!product) {
         return {
@@ -135,7 +136,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
         openGraph: {
             title: product.title,
             description: product.description,
-            url: `https://atsince24.com/products/${params.slug}`,
+            url: `https://atsince24.com/products/${slug}`,
             images: [
                 {
                     url: product.images[0],
@@ -153,7 +154,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
             images: product.images,
         },
         alternates: {
-            canonical: `https://atsince24.com/products/${params.slug}`,
+            canonical: `https://atsince24.com/products/${slug}`,
         },
     }
 }

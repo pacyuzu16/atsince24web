@@ -1,5 +1,29 @@
 import Image from "next/image"
 import { CalendarIcon, MapPin } from "lucide-react"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Our Work - Completed Projects & Installations",
+  description:
+    "Explore @Since24's portfolio of completed projects across Rwanda - solar water heater and automatic gate installations showcasing our quality, innovation, and customer satisfaction.",
+  alternates: {
+    canonical: "https://atsince24.com/our-work",
+  },
+  openGraph: {
+    title: "Our Work - Completed Projects & Installations | @Since24",
+    description:
+      "Explore @Since24's portfolio of completed solar water heater and automatic gate installations across Rwanda.",
+    url: "https://atsince24.com/our-work",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "@Since24 - Our Work",
+      },
+    ],
+  },
+}
 
 interface Project {
   id: string
