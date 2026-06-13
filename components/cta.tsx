@@ -15,7 +15,7 @@ export default function Cta() {
                     <Button asChild className="bg-white text-brand-blue hover:bg-gray-100">
                         <Link href="/products">Explore Products</Link>
                     </Button>
-                    <Button asChild variant="outline" className="text-[#08529c] border-white hover:bg-white/10">
+                    <Button asChild variant="outline" className="text-white border-white bg-transparent hover:bg-white/10 hover:text-white">
                         <Link href="/contact">Contact Us</Link>
                     </Button>
                 </div>

@@ -10,6 +10,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Check } from "lucide-react"
+import { useToast } from "@/components/ui/use-toast"
 
 interface QuoteModalProps {
   open: boolean
@@ -28,6 +29,7 @@ export function QuoteModal({ open, onOpenChange, productName }: QuoteModalProps)
 
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const { toast } = useToast()
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -78,7 +80,12 @@ export function QuoteModal({ open, onOpenChange, productName }: QuoteModalProps)
       }
     } catch (error) {
       console.error('Error submitting form:', error)
-      alert('There was an error submitting your request. Please try again.')
+      toast({
+        title: "Something went wrong",
+        description: "There was an error submitting your request. Please try again.",
+        variant: "destructive",
+        duration: 4000,
+      })
     } finally {
       setIsSubmitting(false)
     }

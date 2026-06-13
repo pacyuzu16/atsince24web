@@ -84,7 +84,7 @@ export default function HeroCarousel() {
             src={slide.image || "/placeholder.svg"}
             alt={slide.title}
             fill
-            className="object-fill h-full w-full"
+            className="object-cover h-full w-full"
             priority={index === 0}
           />
           <div className="relative z-20 h-full flex flex-col justify-center container mx-auto">

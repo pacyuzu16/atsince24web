@@ -105,7 +105,7 @@ export default function Home() {
               "longitude": 30.0619
             },
             "openingHours": "Mo-Fr 08:00-18:00, Sa 09:00-17:00",
-            "priceRange": "rwfrs",
+            "priceRange": "$$",
             "serviceArea": {
               "@type": "Country",
               "name": "Rwanda"

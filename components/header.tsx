@@ -32,6 +32,25 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
+  // Lock body scroll and allow Escape to close while the mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = ""
+    }
+
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsMobileMenuOpen(false)
+    }
+    window.addEventListener("keydown", handleEscape)
+
+    return () => {
+      window.removeEventListener("keydown", handleEscape)
+      document.body.style.overflow = ""
+    }
+  }, [isMobileMenuOpen])
+
   return (
     <>
       <header
@@ -86,6 +105,16 @@ export default function Header() {
               <Menu className="h-6 w-6 text-brand-dark" />
             )}
           </button>
+
+          {/* Mobile menu backdrop */}
+          <div
+            className={cn(
+              "fixed inset-0 z-30 bg-black/40 backdrop-blur-sm transition-opacity duration-300 md:hidden",
+              isMobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none",
+            )}
+            onClick={() => setIsMobileMenuOpen(false)}
+            aria-hidden="true"
+          />
 
           {/* Mobile Navigation */}
           <div
