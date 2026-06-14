@@ -25,25 +25,18 @@ const products: Product[] = [
     link: "/products/solar-water-heater",
   },
   {
+    id: "water-pump",
+    name: "Water Pump",
+    description: "Reliable water pumps delivering strong, steady water pressure for homes, businesses, and farms.",
+    image: "/placeholder.svg?height=600&width=600",
+    link: "/products/water-pump",
+  },
+  {
     id: "automatic-gate-opener",
-    name: "Automatic Gate Opener",
-    description: "Smart gate solutions for enhanced security and convenience.",
+    name: "Automatic Gate Opener (Gate Motor)",
+    description: "Gate motors and automatic openers for sliding and swing gates - enhanced security and convenience.",
     image: "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751193054/%40since24/phft2gzekut3jtjxa9cm.jpg",
     link: "/products/automatic-gate-opener",
-  },
-  {
-    id: "gate-barrier",
-    name: "Gate Barrier",
-    description: "Advanced barrier systems for controlled access to your property.",
-    image: "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751192867/%40since24/gvnhkb7gdhatc4fjoqrh.jpg",
-    link: "/products/gate-barrier",
-  },
-  {
-    id: "air-conditioner",
-    name: "Air Conditioner",
-    description: "Energy-efficient cooling solutions for your home or office.",
-    image: "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751193179/%40since24/qoisxsvje4vcjnfvejkv.jpg",
-    link: "/products/air-conditioner",
   },
 ]
 
@@ -76,12 +69,12 @@ export default function FeaturedProducts() {
         <div className="text-center mb-12 animate-on-scroll">
           <h2 className="text-3xl md:text-4xl font-light tracking-tight text-brand-dark mb-4">Our Premium Products</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Discover our range of high-quality electronic appliances designed to simplify your life while adding a touch
-            of sophistication to your space.
+            Explore our core range - solar water heaters, water pumps, and automatic gate openers (gate motors) -
+            high-quality solutions with professional installation across Rwanda.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((product, index) => (
             <div
               key={product.id}

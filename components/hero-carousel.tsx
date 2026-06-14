@@ -30,22 +30,22 @@ const slides: Slide[] = [
   },
   {
     id: 2,
-    title: "Automatic Gate Systems",
-    description: "Enhance your property's security and convenience with our smart gate solutions.",
+    title: "Automatic Gate Openers & Gate Motors",
+    description: "Secure your property with reliable gate motors for sliding and swing gates - remote control and easy access.",
     image: "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751191724/%40since24/p2hae2vw9lk6flouib08.png",
     cta: {
-      text: "View Solutions",
+      text: "View Gate Motors",
       link: "/products/automatic-gate-opener",
     },
   },
   {
     id: 3,
-    title: "Professional Installations",
-    description: "Our expert team ensures flawless setup and configuration of all our products.",
+    title: "Professional Installation Across Rwanda",
+    description: "Expert supply and installation of solar water heaters, water pumps, and gate motors - flawless setup, every time.",
     image: "https://res.cloudinary.com/ddlhho2lk/image/upload/c_crop,ar_16:9/v1750194487/%40since24/jgt7pyjj0yditru7qk59.png",
     cta: {
-      text: "See Our Work",
-      link: "/our-work",
+      text: "Explore Products",
+      link: "/products",
     },
   },
 ]

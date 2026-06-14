@@ -9,18 +9,17 @@ export const metadata: Metadata = {
     "about @Since24",
     "@Since24 company",
     "@Since24 Rwanda",
-    "electronic appliances company Rwanda",
     "solar water heater company Rwanda",
-    "gate opener company Rwanda",
-    "air conditioner company Rwanda",
+    "water pump supplier Rwanda",
+    "gate motor company Rwanda",
+    "automatic gate opener company Rwanda",
     "installation services company Rwanda",
-    "premium electronics Rwanda",
-    "sustainable technology company Rwanda",
-    "smart home solutions Rwanda",
+    "solar water heater Kigali",
+    "water pump Kigali",
+    "gate motor Kigali",
     "professional installation Rwanda",
-    "Kigali electronics company",
-    "Rwanda technology company",
-    "eco-friendly appliances Rwanda",
+    "sustainable technology company Rwanda",
+    "eco-friendly solutions Rwanda",
     "energy saving solutions Rwanda"
   ],
   openGraph: {
@@ -324,38 +323,30 @@ export default function AboutPage() {
               },
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
-                "name": "Electronic Appliances & Services",
+                "name": "Solar Water Heaters, Water Pumps & Gate Motors",
                 "itemListElement": [
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Product",
                       "name": "Solar Water Heater",
-                      "description": "Eco-friendly water heating solution"
+                      "description": "Eco-friendly solar water heating with pressurized and non-pressurized options"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Product",
-                      "name": "Automatic Gate Opener",
-                      "description": "Smart gate solutions for enhanced security"
+                      "name": "Water Pump",
+                      "description": "Surface, booster, and submersible borehole pumps for strong, steady water pressure"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Product",
-                      "name": "Gate Barrier",
-                      "description": "Advanced barrier systems for controlled access"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Product",
-                      "name": "Air Conditioner",
-                      "description": "Energy-efficient cooling solutions"
+                      "name": "Automatic Gate Opener (Gate Motor)",
+                      "description": "Gate motors and automatic openers for sliding and swing gates"
                     }
                   }
                 ]

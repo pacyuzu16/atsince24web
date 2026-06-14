@@ -7,32 +7,29 @@ import InstallationServices from "@/components/installation-services"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Premium Electronic Appliances & Installation Services in Rwanda",
-  description: "Leading provider of premium electronic appliances and professional installation services in Rwanda. Solar water heaters, automatic gate openers, gate barriers, air conditioners, and more. Expert installation and maintenance services.",
+  title: "Solar Water Heaters, Water Pumps & Gate Motors in Rwanda",
+  description: "@Since24 supplies and installs solar water heaters, water pumps (booster & submersible borehole), and automatic gate openers (gate motors) in Kigali and across Rwanda. Energy efficient, durable, with professional installation and after-sales support.",
   keywords: [
-    "electronic appliances Rwanda",
     "solar water heater Rwanda",
+    "solar water heater Kigali",
+    "solar water heater price Rwanda",
+    "water pump Rwanda",
+    "water booster pump Rwanda",
+    "submersible borehole pump Rwanda",
+    "water pump price Rwanda",
+    "gate motor Rwanda",
     "automatic gate opener Rwanda",
-    "gate barrier Rwanda",
-    "air conditioner Rwanda",
+    "sliding gate motor Rwanda",
+    "swing gate motor Rwanda",
+    "gate motor Kigali",
     "installation services Rwanda",
-    "home automation Rwanda",
-    "energy efficient appliances",
-    "professional installation",
-    "maintenance services",
-    "premium electronics Rwanda",
-    "sustainable technology Rwanda",
-    "smart home solutions Rwanda",
-    "commercial electronics Rwanda",
-    "residential appliances Rwanda",
-    "Kigali electronics",
-    "Rwanda technology",
-    "eco-friendly appliances Rwanda",
-    "energy saving solutions Rwanda"
+    "professional installation Rwanda",
+    "Kigali",
+    "Rwanda"
   ],
   openGraph: {
-    title: "Premium Electronic Appliances & Installation Services in Rwanda | @Since24",
-    description: "Leading provider of premium electronic appliances and professional installation services in Rwanda. Solar water heaters, automatic gate openers, gate barriers, air conditioners, and more.",
+    title: "Solar Water Heaters, Water Pumps & Gate Motors in Rwanda | @Since24",
+    description: "@Since24 supplies and installs solar water heaters, water pumps, and automatic gate openers (gate motors) in Kigali and across Rwanda.",
     url: "https://atsince24.com",
     images: [
       {
@@ -45,8 +42,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Premium Electronic Appliances & Installation Services in Rwanda | @Since24",
-    description: "Leading provider of premium electronic appliances and professional installation services in Rwanda. Expert installation and maintenance services.",
+    title: "Solar Water Heaters, Water Pumps & Gate Motors in Rwanda | @Since24",
+    description: "@Since24 supplies and installs solar water heaters, water pumps, and automatic gate openers (gate motors) in Kigali and across Rwanda.",
     images: ["/images/og-image.jpg"],
   },
   alternates: {
@@ -112,38 +109,30 @@ export default function Home() {
             },
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
-              "name": "Electronic Appliances & Services",
+              "name": "Solar Water Heaters, Water Pumps & Gate Motors",
               "itemListElement": [
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Product",
                     "name": "Solar Water Heater",
-                    "description": "Eco-friendly water heating solution with pressurized and non-pressurized options"
+                    "description": "Eco-friendly solar water heating with pressurized and non-pressurized options"
                   }
                 },
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Product",
-                    "name": "Automatic Gate Opener",
-                    "description": "Smart gate solutions for enhanced security and convenience"
+                    "name": "Water Pump",
+                    "description": "Surface, booster, and submersible borehole pumps for strong, steady water pressure"
                   }
                 },
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Product",
-                    "name": "Gate Barrier",
-                    "description": "Advanced barrier systems for controlled access to your property"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Product",
-                    "name": "Air Conditioner",
-                    "description": "Energy-efficient cooling solutions for your home or office"
+                    "name": "Automatic Gate Opener (Gate Motor)",
+                    "description": "Gate motors and automatic openers for sliding and swing gates"
                   }
                 }
               ]

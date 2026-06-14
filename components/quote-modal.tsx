@@ -94,9 +94,9 @@ export function QuoteModal({ open, onOpenChange, productName }: QuoteModalProps)
   const products = [
     "Solar Water Heater - Pressurized",
     "Solar Water Heater - Non-Pressurized",
-    "Automatic Gate Opener",
-    "Gate Barrier",
-    "Air Conditioner",
+    "Water Pump - Surface / Booster",
+    "Water Pump - Submersible / Borehole",
+    "Automatic Gate Opener (Gate Motor)",
     "Other/Not Sure",
   ]
 

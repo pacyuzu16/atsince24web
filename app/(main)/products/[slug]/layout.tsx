@@ -33,87 +33,45 @@ const productMetadata: ProductMetadata = {
         ]
     },
     "automatic-gate-opener": {
-        title: "Automatic Gate Opener Rwanda | Smart Gate Solutions | @Since24",
-        description: "Professional automatic gate openers in Rwanda with remote control and smartphone integration. Enhanced security and convenience for residential and commercial properties. Expert installation included.",
+        title: "Automatic Gate Opener & Gate Motor Rwanda | Sliding & Swing Gate Motors | @Since24",
+        description: "Professional gate motors and automatic gate openers in Rwanda for sliding and swing gates, with remote control and smartphone integration. Enhanced security and convenience for homes and businesses. Expert installation included.",
         keywords: [
+            "gate motor Rwanda",
+            "gate motor Kigali",
+            "sliding gate motor Rwanda",
+            "swing gate motor Rwanda",
             "automatic gate opener Rwanda",
             "automatic gate opener Kigali",
-            "smart gate opener Rwanda",
-            "remote control gate opener",
+            "gate motor price Rwanda",
             "gate automation Rwanda",
-            "security gate opener Rwanda",
-            "commercial gate opener Rwanda",
-            "residential gate opener Rwanda",
-            "gate opener installation Rwanda",
-            "gate opener maintenance Rwanda",
-            "smart home gate control Rwanda",
-            "gate security systems Rwanda"
+            "remote control gate opener Rwanda",
+            "gate motor installation Rwanda",
+            "commercial gate motor Rwanda",
+            "residential gate motor Rwanda"
         ],
         images: [
             "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751200214/%40since24/mvcomqc5ife4jp6yt4eo.jpg"
         ]
     },
-    "gate-barrier": {
-        title: "Gate Barrier Rwanda | Advanced Access Control Systems | @Since24",
-        description: "Professional gate barriers and access control systems in Rwanda. Efficient traffic control for commercial and residential properties with durable construction and reliable operation.",
+    "water-pump": {
+        title: "Water Pump Rwanda | Booster & Submersible Borehole Pumps | @Since24",
+        description: "Reliable water pumps in Rwanda - surface, booster, and submersible borehole pumps for strong, steady water pressure in homes, businesses, and farms. Energy efficient, durable, with professional installation included.",
         keywords: [
-            "gate barrier Rwanda",
-            "gate barrier Kigali",
-            "access control system Rwanda",
-            "traffic barrier Rwanda",
-            "commercial gate barrier Rwanda",
-            "residential gate barrier Rwanda",
-            "automatic barrier system Rwanda",
-            "parking barrier Rwanda",
-            "security barrier Rwanda",
-            "barrier installation Rwanda",
-            "barrier maintenance Rwanda",
-            "access control Rwanda"
+            "water pump Rwanda",
+            "water pump Kigali",
+            "water booster pump Rwanda",
+            "submersible pump Rwanda",
+            "borehole pump Rwanda",
+            "water pressure pump Rwanda",
+            "surface water pump Rwanda",
+            "domestic water pump Rwanda",
+            "irrigation pump Rwanda",
+            "water pump price Rwanda",
+            "water pump installation Rwanda",
+            "water pump for home Rwanda"
         ],
         images: [
-            "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751224062/%40since24/qgpcjltuwjmhk4nrm56p.jpg"
-        ]
-    },
-    "air-conditioner": {
-        title: "Air Conditioner Rwanda | Energy-Efficient Cooling Solutions | @Since24",
-        description: "Premium air conditioners in Rwanda with energy-efficient cooling solutions for homes and offices. Smart features, air purification, and professional installation services included.",
-        keywords: [
-            "air conditioner Rwanda",
-            "air conditioner Kigali",
-            "energy efficient air conditioner Rwanda",
-            "smart air conditioner Rwanda",
-            "residential air conditioner Rwanda",
-            "commercial air conditioner Rwanda",
-            "air conditioner installation Rwanda",
-            "air conditioner maintenance Rwanda",
-            "cooling solutions Rwanda",
-            "climate control Rwanda",
-            "air purification Rwanda",
-            "smart home cooling Rwanda"
-        ],
-        images: [
-            "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751224403/%40since24/tyhxh3xfrmurxb7rexhz.webp"
-        ]
-    },
-    "solar-panel": {
-        title: "Solar Panel Rwanda | Solar Energy Solutions | @Since24",
-        description: "High-quality solar panels in Rwanda for residential and commercial use. Harness solar energy to power your home or business with professional installation and maintenance services.",
-        keywords: [
-            "solar panel Rwanda",
-            "solar panel Kigali",
-            "solar energy Rwanda",
-            "solar power Rwanda",
-            "residential solar panel Rwanda",
-            "commercial solar panel Rwanda",
-            "solar panel installation Rwanda",
-            "solar panel maintenance Rwanda",
-            "renewable energy Rwanda",
-            "green energy Rwanda",
-            "solar technology Rwanda",
-            "sustainable energy Rwanda"
-        ],
-        images: [
-            "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751224405/%40since24/wggpmnhx2i1d1v2cklxj.jpg"
+            "/images/og-image.jpg"
         ]
     }
 }

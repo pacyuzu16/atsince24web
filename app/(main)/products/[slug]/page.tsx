@@ -105,9 +105,9 @@ const products: { [key: string]: Product } = {
   "automatic-gate-opener": {
     id: "automatic-gate-opener",
     name: "Automatic Gate Opener",
-    description: "Smart gate solutions for enhanced security and convenience.",
+    description: "Automatic gate openers and gate motors for sliding and swing gates - enhanced security and convenience.",
     longDescription:
-      "Our Automatic Gate Openers combine security with convenience, allowing you to control access to your property with ease. With remote control operation and optional smartphone integration, you can manage your gate from anywhere.",
+      "Also known as gate motors, our Automatic Gate Openers combine security with convenience, letting you control access to your property with ease. Suitable for sliding and swing gates, with remote control operation and optional smartphone integration, you can manage your gate from anywhere. Professional installation and after-sales support are included across Rwanda.",
     whyChoose: [
       {
         title: "Enhanced Security",
@@ -175,122 +175,74 @@ const products: { [key: string]: Product } = {
       },
     ],
   },
-  "gate-barrier": {
-    id: "gate-barrier",
-    name: "Gate Barrier",
-    description: "Advanced barrier systems for controlled access to your property.",
+  "water-pump": {
+    id: "water-pump",
+    name: "Water Pump",
+    description: "Reliable water pumps delivering strong, steady water pressure for homes, businesses, and farms.",
     longDescription:
-      "Our Gate Barriers provide efficient traffic control for commercial and residential properties. With durable construction and reliable operation, these barriers ensure secure access management for your premises.",
+      "Our Water Pumps provide a dependable water supply and consistent pressure for residential, commercial, and agricultural use across Rwanda. From surface and booster pumps that strengthen household water pressure to submersible borehole pumps built for deep wells, we supply energy-efficient, durable pumps matched to your needs - with professional installation and reliable after-sales support.",
     whyChoose: [
       {
-        title: "Efficient Traffic Control",
-        description: "Manage vehicle access to your property with precision and ease, reducing unauthorized entry.",
+        title: "Strong, Consistent Pressure",
+        description:
+          "Enjoy steady water flow to every tap, shower, and outlet, even in multi-storey buildings and during peak demand.",
       },
       {
-        title: "Rapid Operation",
-        description: "Our barriers open and close in seconds, minimizing wait times while maintaining security.",
+        title: "Energy Efficient",
+        description:
+          "High-efficiency motors move more water per watt, keeping your electricity bills low while delivering reliable performance.",
       },
       {
-        title: "Durable Construction",
-        description: "Built to withstand frequent use and harsh weather conditions, ensuring long-term reliability.",
+        title: "Durable and Reliable",
+        description:
+          "Built with corrosion-resistant materials and quality components for years of trouble-free operation in Rwandan conditions.",
       },
       {
-        title: "Customizable Options",
-        description: "Choose from various arm lengths and control systems to suit your specific requirements.",
+        title: "The Right Pump for Every Need",
+        description:
+          "Surface, booster, and submersible borehole options to suit homes, businesses, boreholes, and irrigation.",
       },
     ],
-    motivationalBanner: "🚧 Control Access with Precision: Our Gate Barriers Provide Security Without Compromise!",
+    motivationalBanner:
+      "💧 Never Run Dry: Our Water Pumps Deliver Strong, Reliable Water Pressure Wherever You Need It!",
     images: [
-      "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751752254/%40since24/klcsrtbwuy6ukoi0v8wj.png",
-      "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751224062/%40since24/qgpcjltuwjmhk4nrm56p.jpg",
-      "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751192867/%40since24/gvnhkb7gdhatc4fjoqrh.jpg",
-      "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751756120/%40since24/hkf1utp8qho3ftrmlcb6.jpg",
+      "/placeholder.svg?height=600&width=600",
+      "/placeholder.svg?height=600&width=600",
+      "/placeholder.svg?height=600&width=600",
+      "/placeholder.svg?height=600&width=600",
     ],
     specs: {
-      Power: "AC with Battery Backup",
-      Material: "Aluminum and Steel",
+      "Pump Types": "Surface, Booster, Submersible",
+      "Power Supply": "220V AC",
+      "Power Range": "0.5HP - 2HP",
+      Material: "Cast Iron / Stainless Steel",
+      "Max Head": "Up to 60m",
+      "Max Flow": "Up to 100 L/min",
+      "Automatic Control": "Optional Pressure Switch",
       Warranty: "2 Years",
-      "Opening Time": "1-3 seconds",
-      "Arm Length": "Up to 6m",
-      "Operation Cycles": "5000 cycles per day",
     },
-    useCases: ["Parking lots", "Toll booths", "Office complexes", "Residential communities"],
+    useCases: ["Home water supply", "Multi-storey buildings", "Boreholes and wells", "Irrigation and farming"],
     installationIncluded: true,
     variants: [
       {
-        id: "standard-barrier",
-        name: "Standard Barrier",
-        features: ["Fast operation", "Durable construction", "Safety sensors", "Manual override option"],
-      },
-      {
-        id: "premium-barrier",
-        name: "Premium Barrier",
+        id: "surface-booster-pump",
+        name: "Surface / Booster Pump",
         features: [
-          "Advanced access control",
-          "Integration with security systems",
-          "Extended warranty",
-          "Customizable arm length",
+          "Boosts household and mains water pressure",
+          "Easy to install and maintain",
+          "Optional automatic pressure control",
+          "Ideal for tanks, homes, and small businesses",
         ],
       },
-    ],
-  },
-  "air-conditioner": {
-    id: "air-conditioner",
-    name: "Air Conditioner",
-    description: "Energy-efficient cooling solutions for your home or office.",
-    longDescription:
-      "Our premium Air Conditioners provide efficient cooling while minimizing energy consumption. With smart features and elegant design, these units blend seamlessly into any interior while maintaining optimal comfort levels.",
-    whyChoose: [
       {
-        title: "Energy Efficiency",
-        description:
-          "Our air conditioners are designed to provide maximum cooling with minimal energy consumption, reducing your electricity bills.",
-      },
-      {
-        title: "Quiet Operation",
-        description:
-          "Advanced technology ensures whisper-quiet operation, allowing you to enjoy a peaceful environment.",
-      },
-      {
-        title: "Smart Features",
-        description:
-          "Control your air conditioner remotely via smartphone app, set schedules, and monitor energy usage.",
-      },
-      {
-        title: "Air Purification",
-        description:
-          "Built-in filters remove dust, allergens, and bacteria, improving indoor air quality for better health.",
-      },
-    ],
-    motivationalBanner: "❄️ Stay Cool and Comfortable Year-Round with Our Energy-Efficient Air Conditioners!",
-    images: [
-      "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751193179/%40since24/qoisxsvje4vcjnfvejkv.jpg",
-      "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751224403/%40since24/tyhxh3xfrmurxb7rexhz.webp",
-      "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751756655/%40since24/duoezg2ferox72zf7pq3.jpg",
-      "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751756655/%40since24/zms0pgxofaljqjz42szf.webp",
-    ],
-    specs: {
-      "Energy Rating": "5-Star",
-      "Cooling Capacity": "1-2 Ton",
-      Technology: "Inverter",
-      Warranty: "5 Years on Compressor",
-      "Noise Level": "Low",
-      "Remote Control": "Yes, with Smart App Integration",
-    },
-    useCases: ["Residential rooms", "Office spaces", "Commercial establishments", "Server rooms"],
-    installationIncluded: true,
-    variants: [
-      {
-        id: "standard-ac",
-        name: "Standard Air Conditioner",
-        capacity: "1 Ton",
-        features: ["Energy efficient", "Low noise operation", "Remote control", "Timer function"],
-      },
-      {
-        id: "premium-ac",
-        name: "Premium Air Conditioner",
-        capacity: "1.5 Ton",
-        features: ["Smart app control", "Voice assistant compatibility", "Air purification", "Sleep mode"],
+        id: "submersible-pump",
+        name: "Submersible Borehole Pump",
+        features: [
+          "Designed for deep wells and boreholes",
+          "High head for deep water sources",
+          "Sealed, corrosion-resistant construction",
+          "Quiet, efficient underwater operation",
+        ],
       },
     ],
   },

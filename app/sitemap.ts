@@ -47,28 +47,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.9,
         },
         {
+            url: `${baseUrl}/products/water-pump`,
+            lastModified: currentDate,
+            changeFrequency: "weekly" as const,
+            priority: 0.9,
+        },
+        {
             url: `${baseUrl}/products/automatic-gate-opener`,
             lastModified: currentDate,
             changeFrequency: "weekly" as const,
             priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/products/gate-barrier`,
-            lastModified: currentDate,
-            changeFrequency: "weekly" as const,
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/products/air-conditioner`,
-            lastModified: currentDate,
-            changeFrequency: "weekly" as const,
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/products/solar-panel`,
-            lastModified: currentDate,
-            changeFrequency: "weekly" as const,
-            priority: 0.8,
         },
     ]
 

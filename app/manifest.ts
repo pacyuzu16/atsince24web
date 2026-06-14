@@ -2,9 +2,9 @@ import type { MetadataRoute } from "next"
 
 export default function manifest(): MetadataRoute.Manifest {
     return {
-        name: "@Since24 - Premium Electronic Appliances & Installation Services",
+        name: "@Since24 - Solar Water Heaters, Water Pumps & Gate Motors",
         short_name: "@Since24",
-        description: "Leading provider of premium electronic appliances and professional installation services in Rwanda. Solar water heaters, automatic gate openers, gate barriers, air conditioners, and more.",
+        description: "Supplier and installer of solar water heaters, water pumps, and automatic gate openers (gate motors) in Kigali and across Rwanda. Professional installation included.",
         start_url: "/",
         display: "standalone",
         background_color: "#ffffff",

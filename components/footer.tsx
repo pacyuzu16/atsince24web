@@ -78,26 +78,18 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/products/water-pump"
+                  className="text-white/70 hover:text-white transition-colors text-sm"
+                >
+                  Water Pump
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/products/automatic-gate-opener"
                   className="text-white/70 hover:text-white transition-colors text-sm"
                 >
-                  Automatic Gate Opener
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/products/gate-barrier"
-                  className="text-white/70 hover:text-white transition-colors text-sm"
-                >
-                  Gate Barrier
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/products/air-conditioner"
-                  className="text-white/70 hover:text-white transition-colors text-sm"
-                >
-                  Air Conditioner
+                  Gate Motor (Automatic Gate Opener)
                 </Link>
               </li>
             </ul>

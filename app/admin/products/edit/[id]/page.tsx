@@ -73,61 +73,32 @@ const mockProducts = {
     },
     useCases: ["Residential driveways", "Commercial properties"],
   },
-  "gate-barrier": {
-    id: "gate-barrier",
-    name: "Gate Barrier",
-    price: "RWF 650,000",
-    description: "Advanced barrier systems for controlled access to your property.",
+  "water-pump": {
+    id: "water-pump",
+    name: "Water Pump",
+    price: "RWF 250,000",
+    description: "Reliable water pumps delivering strong, steady water pressure for homes, businesses, and farms.",
     longDescription:
-      "Our Gate Barriers provide efficient traffic control for commercial and residential properties. With durable construction and reliable operation, these barriers ensure secure access management for your premises.",
+      "Our Water Pumps provide a dependable water supply and consistent pressure for residential, commercial, and agricultural use. From surface and booster pumps to submersible borehole pumps, we supply energy-efficient, durable pumps with professional installation.",
     whyChoose: [
       {
-        title: "Efficient Traffic Control",
-        description: "Manage vehicle access to your property with precision and ease, reducing unauthorized entry.",
+        title: "Strong, Consistent Pressure",
+        description: "Enjoy steady water flow to every tap and outlet, even in multi-storey buildings.",
       },
       {
-        title: "Rapid Operation",
-        description: "Our barriers open and close in seconds, minimizing wait times while maintaining security.",
+        title: "Energy Efficient & Durable",
+        description: "High-efficiency motors and corrosion-resistant builds keep running costs low and reliability high.",
       },
     ],
-    motivationalBanner: "🚧 Control Access with Precision: Our Gate Barriers Provide Security Without Compromise!",
-    category: "gate",
-    comingSoon: true,
+    motivationalBanner: "💧 Never Run Dry: Our Water Pumps Deliver Strong, Reliable Water Pressure Wherever You Need It!",
+    category: "water",
+    comingSoon: false,
     installationIncluded: true,
     specs: {
-      Power: "AC with Battery Backup",
-      Material: "Aluminum and Steel",
+      "Pump Types": "Surface, Booster, Submersible",
+      "Power Range": "0.5HP - 2HP",
     },
-    useCases: ["Parking lots", "Toll booths"],
-  },
-  "air-conditioner": {
-    id: "air-conditioner",
-    name: "Air Conditioner",
-    price: "RWF 550,000",
-    description: "Energy-efficient cooling solutions for your home or office.",
-    longDescription:
-      "Our premium Air Conditioners provide efficient cooling while minimizing energy consumption. With smart features and elegant design, these units blend seamlessly into any interior while maintaining optimal comfort levels.",
-    whyChoose: [
-      {
-        title: "Energy Efficiency",
-        description:
-          "Our air conditioners are designed to provide maximum cooling with minimal energy consumption, reducing your electricity bills.",
-      },
-      {
-        title: "Quiet Operation",
-        description:
-          "Advanced technology ensures whisper-quiet operation, allowing you to enjoy a peaceful environment.",
-      },
-    ],
-    motivationalBanner: "❄️ Stay Cool and Comfortable Year-Round with Our Energy-Efficient Air Conditioners!",
-    category: "cooling",
-    comingSoon: true,
-    installationIncluded: true,
-    specs: {
-      "Energy Rating": "5-Star",
-      "Cooling Capacity": "1-2 Ton",
-    },
-    useCases: ["Residential rooms", "Office spaces"],
+    useCases: ["Home water supply", "Boreholes and wells", "Irrigation and farming"],
   },
 }
 

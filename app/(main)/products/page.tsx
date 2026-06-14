@@ -55,35 +55,19 @@ const products: Product[] = [
     ],
   },
   {
+    id: "water-pump",
+    name: "Water Pump",
+    description: "Reliable water pumps delivering strong, steady water pressure for homes, businesses, and farms.",
+    image: "/placeholder.svg?height=600&width=600",
+    link: "/products/water-pump",
+  },
+  {
     id: "automatic-gate-opener",
-    name: "Automatic Gate Opener",
-    description: "Smart gate solutions for enhanced security and convenience.",
+    name: "Automatic Gate Opener (Gate Motor)",
+    description: "Gate motors and automatic openers for sliding and swing gates - enhanced security and convenience.",
     image: "https://res.cloudinary.com/ddlhho2lk/image/upload/c_pad,ar_16:9/v1751200214/%40since24/mvcomqc5ife4jp6yt4eo.jpg",
     link: "/products/automatic-gate-opener",
   },
-  {
-    id: "gate-barrier",
-    name: "Gate Barrier",
-    description: "Advanced barrier systems for controlled access to your property.",
-    image: "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751224062/%40since24/qgpcjltuwjmhk4nrm56p.jpg",
-    link: "/products/gate-barrier",
-  },
-  {
-    id: "air-conditioner",
-    name: "Air Conditioner",
-    description: "Energy-efficient cooling solutions for your home or office.",
-    image: "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751224403/%40since24/tyhxh3xfrmurxb7rexhz.webp",
-    link: "/products/air-conditioner",
-  },
-  {
-    id: "solar-panel",
-    name: "Solar Panel",
-    description: "Harness solar energy to power your home or business.",
-    image: "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751224405/%40since24/wggpmnhx2i1d1v2cklxj.jpg",
-    link: "/products/solar-panel",
-    comingSoon: true,
-  },
-
 ]
 
 export default function ProductsPage() {
@@ -105,10 +89,12 @@ export default function ProductsPage() {
     <>
       <section className="pt-32 pb-16 bg-gradient-to-r from-blue-700 to-[#08519c] text-white">
         <div className="container mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-light tracking-tight text-white mb-6">Our Products</h1>
+          <h1 className="text-4xl md:text-5xl font-light tracking-tight text-white mb-6">
+            Solar Water Heaters, Water Pumps &amp; Gate Motors
+          </h1>
           <p className="text-white/70 max-w-2xl mx-auto mb-8">
-            Discover our range of premium electronic appliances designed to enhance your lifestyle with innovative
-            technology and elegant design.
+            Discover @since24&apos;s core range - premium solar water heaters, reliable water pumps, and automatic gate
+            openers (gate motors) - with professional installation across Rwanda.
           </p>
         </div>
       </section>
