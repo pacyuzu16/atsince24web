@@ -86,7 +86,7 @@ export default function HeroCarousel() {
   // slide changes (so manual navigation gives a full interval before the next).
   useEffect(() => {
     if (isPaused) return
-    const interval = setInterval(nextSlide, 3500)
+    const interval = setInterval(nextSlide, 3000)
     return () => clearInterval(interval)
   }, [currentSlide, isPaused])
 
@@ -102,7 +102,7 @@ export default function HeroCarousel() {
         <div
           key={slide.id}
           className={cn(
-            "absolute inset-0 transition-opacity duration-1000",
+            "absolute inset-0 transition-opacity duration-700",
             index === currentSlide ? "opacity-100" : "opacity-0 pointer-events-none",
           )}
         >

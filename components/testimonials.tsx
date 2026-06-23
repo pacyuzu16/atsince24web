@@ -50,7 +50,7 @@ export default function Testimonials() {
   // Auto-advance: pauses on hover/focus; timer resets on manual navigation.
   useEffect(() => {
     if (isPaused) return
-    const interval = setInterval(nextTestimonial, 8000)
+    const interval = setInterval(nextTestimonial, 5000)
     return () => clearInterval(interval)
   }, [currentTestimonial, isPaused])
 

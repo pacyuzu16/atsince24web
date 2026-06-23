@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Menu, X } from "lucide-react"
+import { Menu, X, ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { usePathname } from "next/navigation"
@@ -109,37 +109,42 @@ export default function Header() {
           {/* Mobile menu backdrop */}
           <div
             className={cn(
-              "fixed inset-0 z-30 bg-black/40 backdrop-blur-sm transition-opacity duration-300 md:hidden",
+              "fixed inset-0 z-40 bg-brand-dark/30 backdrop-blur-sm transition-opacity duration-300 md:hidden",
               isMobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none",
             )}
             onClick={() => setIsMobileMenuOpen(false)}
             aria-hidden="true"
           />
 
-          {/* Mobile Navigation */}
+          {/* Mobile Navigation - compact dropdown card */}
           <div
             className={cn(
-              "fixed inset-y-0 right-0 z-40 w-full max-w-xs bg-white p-6 shadow-xl transform transition-transform ease-in-out duration-300 flex flex-col justify-start",
-              isMobileMenuOpen ? "translate-x-0" : "translate-x-full",
+              "fixed top-20 left-4 right-4 z-50 origin-top overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-2xl transition-all duration-200 ease-out md:hidden",
+              isMobileMenuOpen
+                ? "scale-100 opacity-100 translate-y-0"
+                : "pointer-events-none -translate-y-2 scale-95 opacity-0",
             )}
           >
-            <div className="mt-16 flex flex-col space-y-6">
+            <nav className="flex flex-col p-2">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={cn(
-                    "text-lg font-medium tracking-tight transition-colors hover:text-brand-blue",
-                    pathname === link.href ? "text-brand-blue" : "text-brand-dark/80",
-                  )}
                   onClick={() => setIsMobileMenuOpen(false)}
+                  className={cn(
+                    "flex items-center justify-between rounded-xl px-4 py-3 text-base font-medium transition-colors",
+                    pathname === link.href
+                      ? "bg-brand-blue/5 text-brand-blue"
+                      : "text-brand-dark hover:bg-gray-50",
+                  )}
                 >
                   {link.name}
+                  <ChevronRight className="h-4 w-4 opacity-30" />
                 </Link>
               ))}
               <Button
                 variant="default"
-                className="mt-4 w-full bg-brand-blue text-white hover:bg-brand-blue/90"
+                className="mt-2 w-full bg-brand-blue text-white hover:bg-brand-dark"
                 onClick={() => {
                   setIsMobileMenuOpen(false)
                   setIsQuoteModalOpen(true)
@@ -147,7 +152,7 @@ export default function Header() {
               >
                 Get a Quote
               </Button>
-            </div>
+            </nav>
           </div>
         </div>
       </header>
