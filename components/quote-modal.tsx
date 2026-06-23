@@ -192,7 +192,7 @@ export function QuoteModal({ open, onOpenChange, productName }: QuoteModalProps)
 
             <Button
               type="submit"
-              className="w-full bg-blue-800 text-white hover:bg-blue-900"
+              className="w-full bg-brand-blue text-white hover:bg-brand-dark"
               disabled={isSubmitting}
             >
               {isSubmitting ? "Sending..." : "Request Quote"}

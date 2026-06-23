@@ -69,6 +69,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "WebSite",
             "name": "@Since24",
+            "alternateName": ["Since24", "atSince24", "At Since 24", "Since 24", "atsince24"],
             "url": "https://atsince24.com",
             "description": "Solar water heaters, water pumps, and gate motors supplied and installed in Rwanda",
             "potentialAction": {

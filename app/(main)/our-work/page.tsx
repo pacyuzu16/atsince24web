@@ -88,7 +88,7 @@ const projects: Project[] = [
 export default function OurWorkPage() {
   return (
     <>
-      <section className="pt-32 pb-16 bg-gradient-to-r from-blue-900 to-[#0a1f56] text-white">
+      <section className="pt-32 pb-16 bg-gradient-to-r from-brand-blue to-brand-dark text-white">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-light tracking-tight text-white mb-6">Our Work</h1>
           <p className="text-white/70 max-w-2xl mx-auto mb-8">

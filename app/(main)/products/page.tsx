@@ -87,7 +87,7 @@ export default function ProductsPage() {
 
   return (
     <>
-      <section className="pt-32 pb-16 bg-gradient-to-r from-blue-900 to-[#0a1f56] text-white">
+      <section className="pt-32 pb-16 bg-gradient-to-r from-brand-blue to-brand-dark text-white">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-light tracking-tight text-white mb-6">
             Solar Water Heaters, Water Pumps &amp; Gate Motors
