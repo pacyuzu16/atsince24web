@@ -21,8 +21,8 @@ const slides: Slide[] = [
   {
     id: 1,
     title: "Premium Solar Water Heaters",
-    description: "Harness the power of the sun for efficient, eco-friendly water heating solutions.",
-    image: "https://res.cloudinary.com/ddlhho2lk/image/upload/v1750194453/%40since24/t2yxljxcfnyo1zrjucde.png",
+    description: "Harness the power of the sun for efficient, eco-friendly water heating - installed by our own team.",
+    image: "/images/solar-water-heater-install.jpg",
     cta: {
       text: "Explore Products",
       link: "/products/solar-water-heater",
@@ -32,7 +32,7 @@ const slides: Slide[] = [
     id: 2,
     title: "Automatic Gate Openers & Gate Motors",
     description: "Secure your property with reliable gate motors for sliding and swing gates - remote control and easy access.",
-    image: "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751191724/%40since24/p2hae2vw9lk6flouib08.png",
+    image: "/images/gate-motors.jpg",
     cta: {
       text: "View Gate Motors",
       link: "/products/automatic-gate-opener",
@@ -46,6 +46,16 @@ const slides: Slide[] = [
     cta: {
       text: "Explore Products",
       link: "/products",
+    },
+  },
+  {
+    id: 4,
+    title: "Visit Us in Kigali",
+    description: "Find @Since24 at KN 8 Ave, Muhima - your trusted local supplier for solar water heaters, water pumps, and gate motors.",
+    image: "/images/since24-shop.jpg",
+    cta: {
+      text: "Get in Touch",
+      link: "/contact",
     },
   },
 ]
@@ -66,7 +76,7 @@ export default function HeroCarousel() {
   // slide changes (so manual navigation gives a full interval before the next).
   useEffect(() => {
     if (isPaused) return
-    const interval = setInterval(nextSlide, 5000)
+    const interval = setInterval(nextSlide, 3500)
     return () => clearInterval(interval)
   }, [currentSlide, isPaused])
 
