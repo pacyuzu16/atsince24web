@@ -25,7 +25,7 @@ const products: Product[] = [
     id: "solar-water-heater",
     name: "Solar Water Heater",
     description: "Eco-friendly water heating solution with pressurized and non-pressurized options.",
-    image: "https://res.cloudinary.com/ddlhho2lk/image/upload/v1750194456/%40since24/mib2rxi2wgvnevhwsnry.jpg",
+    image: "/images/solar-water-heater-install.jpg",
     link: "/products/solar-water-heater",
     variants: [
       {
@@ -58,14 +58,14 @@ const products: Product[] = [
     id: "water-pump",
     name: "Water Pump",
     description: "Reliable water pumps delivering strong, steady water pressure for homes, businesses, and farms.",
-    image: "/placeholder.svg?height=600&width=600",
+    image: "/images/water-pump.jpg",
     link: "/products/water-pump",
   },
   {
     id: "automatic-gate-opener",
     name: "Automatic Gate Opener (Gate Motor)",
     description: "Gate motors and automatic openers for sliding and swing gates - enhanced security and convenience.",
-    image: "https://res.cloudinary.com/ddlhho2lk/image/upload/c_pad,ar_16:9/v1751200214/%40since24/mvcomqc5ife4jp6yt4eo.jpg",
+    image: "/images/gate-motors.jpg",
     link: "/products/automatic-gate-opener",
   },
 ]

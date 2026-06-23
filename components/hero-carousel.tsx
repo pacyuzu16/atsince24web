@@ -29,6 +29,16 @@ const slides: Slide[] = [
     },
   },
   {
+    id: 5,
+    title: "Reliable Water Pumps",
+    description: "Strong, steady water pressure for homes, businesses, and farms - surface, booster, and borehole pumps.",
+    image: "/images/water-pump.jpg",
+    cta: {
+      text: "View Water Pumps",
+      link: "/products/water-pump",
+    },
+  },
+  {
     id: 2,
     title: "Automatic Gate Openers & Gate Motors",
     description: "Secure your property with reliable gate motors for sliding and swing gates - remote control and easy access.",

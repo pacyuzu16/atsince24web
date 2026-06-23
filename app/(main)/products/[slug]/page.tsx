@@ -67,8 +67,8 @@ const products: { [key: string]: Product } = {
     motivationalBanner:
       "🌞 Harness the Sun with Solar Water Heater: Efficient, Eco-Friendly, and Economical. Make the Switch Today!",
     images: [
-      "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751191716/%40since24/ln7pbfnsqzlnz1kvxhyp.jpg",
-      "https://res.cloudinary.com/ddlhho2lk/image/upload/v1750194453/%40since24/t2yxljxcfnyo1zrjucde.png",
+      "/images/solar-water-heater-install.jpg",
+      "/images/swh-install-team.jpg",
       "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751752837/%40since24/lwymqmaapzrjiyvmvzi5.webp",
       "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751752921/%40since24/okd2m1r8cqnukyccoinm.jpg",
     ],
@@ -132,8 +132,8 @@ const products: { [key: string]: Product } = {
     motivationalBanner:
       "🔐 Upgrade Your Property with Automatic Gate Opener: Security, Convenience, and Peace of Mind in One Solution!",
     images: [
+      "/images/gate-motors.jpg",
       "https://res.cloudinary.com/ddlhho2lk/image/upload/v1750194482/%40since24/naddpdl4fqyt80zrhx6f.png",
-      "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751748451/%40since24/ldo82fhudpd5kegi6ffy.png",
       "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751200214/%40since24/mvcomqc5ife4jp6yt4eo.jpg",
       "https://res.cloudinary.com/ddlhho2lk/image/upload/v1751193054/%40since24/phft2gzekut3jtjxa9cm.jpg",
     ],
@@ -206,10 +206,8 @@ const products: { [key: string]: Product } = {
     motivationalBanner:
       "💧 Never Run Dry: Our Water Pumps Deliver Strong, Reliable Water Pressure Wherever You Need It!",
     images: [
-      "/placeholder.svg?height=600&width=600",
-      "/placeholder.svg?height=600&width=600",
-      "/placeholder.svg?height=600&width=600",
-      "/placeholder.svg?height=600&width=600",
+      "/images/water-pump.jpg",
+      "/images/water-pump-2.jpg",
     ],
     specs: {
       "Pump Types": "Surface, Booster, Submersible",
