@@ -119,7 +119,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <section className="pt-32 pb-16 bg-gradient-to-r from-blue-700 to-[#08519c] text-white">
+      <section className="pt-32 pb-16 bg-gradient-to-r from-blue-900 to-[#0a1f56] text-white">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-light tracking-tight text-white mb-6">Contact Us</h1>
           <p className="text-white/80 max-w-2xl mx-auto mb-8 text-lg">
@@ -132,7 +132,7 @@ export default function ContactPage() {
         <div className="container mx-auto">
           <div className="max-w-5xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-3">
-              <div className="bg-blue-600 text-white p-8 md:p-10">
+              <div className="bg-blue-900 text-white p-8 md:p-10">
                 <h2 className="text-2xl font-medium mb-6 border-b border-white/20 pb-4">Contact Information</h2>
 
                 <div className="space-y-4 mt-8">
@@ -192,7 +192,7 @@ export default function ContactPage() {
                       Thank you for reaching out. We'll get back to you as soon as possible.
                     </p>
                     <Button
-                      className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 text-lg"
+                      className="bg-blue-800 text-white hover:bg-blue-900 px-6 py-2 text-lg"
                       onClick={() => setIsSubmitted(false)}
                     >
                       Send Another Message
@@ -283,7 +283,7 @@ export default function ContactPage() {
                     <Button
                       type="submit"
                       className={cn(
-                        "w-full bg-blue-600 text-white hover:bg-blue-700 py-2.5 text-lg font-medium rounded-md",
+                        "w-full bg-blue-800 text-white hover:bg-blue-900 py-2.5 text-lg font-medium rounded-md",
                         isSubmitting && "opacity-70 cursor-not-allowed",
                       )}
                       disabled={isSubmitting}

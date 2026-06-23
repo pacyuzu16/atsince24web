@@ -266,7 +266,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
   return (
     <>
-      <section className="pt-32 pb-8 bg-gradient-to-r from-blue-700 to-[#08519c] text-white">
+      <section className="pt-32 pb-8 bg-gradient-to-r from-blue-900 to-[#0a1f56] text-white">
         <div className="container mx-auto">
           <div className="flex items-center text-sm text-white/70 mb-4">
             <Link href="/" className="hover:text-white">
@@ -292,7 +292,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       </section>
 
       {/* Motivational Banner */}
-      <div className="bg-gradient-to-r from-brand-blue/90 to-blue-600/90 py-4 text-white">
+      <div className="bg-gradient-to-r from-brand-blue/90 to-blue-800/90 py-4 text-white">
         <div className="container mx-auto text-center px-4">
           <p className="text-lg font-medium">{product.motivationalBanner}</p>
         </div>

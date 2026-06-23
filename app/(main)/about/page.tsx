@@ -82,7 +82,7 @@ const teamMembers: TeamMember[] = [
 export default function AboutPage() {
   return (
     <>
-      <section className="pt-32 pb-16 bg-gradient-to-r from-blue-700 to-[#08519c] text-white">
+      <section className="pt-32 pb-16 bg-gradient-to-r from-blue-900 to-[#0a1f56] text-white">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-light tracking-tight text-white mb-6">About @since24</h1>
           <p className="text-white/70 max-w-2xl mx-auto mb-8">
