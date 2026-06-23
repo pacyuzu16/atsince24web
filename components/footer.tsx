@@ -10,8 +10,8 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-start space-y-4">
             <Image src="/images/logo.png" alt="@since24 Logo" width={180} height={60} className="h-12 w-auto" />
             <p className="text-white/70 text-sm leading-relaxed">
-              The art of Simple Life. Premium electronic appliances and installations designed to simplify your everyday
-              living.
+              The art of Simple Life. Solar water heaters, water pumps, and gate motors - supplied and installed to
+              simplify your everyday living.
             </p>
             <div className="flex space-x-4">
               <Link rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/ATSINCE24" className="text-white/70 hover:text-white transition-colors">

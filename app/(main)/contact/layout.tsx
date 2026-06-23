@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
     title: "Contact @Since24 - Get in Touch | Electronic Appliances Rwanda",
-    description: "Contact @Since24 for premium electronic appliances and professional installation services in Rwanda. Call +250 788 825 011 or email atsince24@gmail.com. Located in Kigali, Muhima.",
+    description: "Contact @Since24 for solar water heaters, water pumps, and gate motors in Rwanda. Call +250 788 825 011 or email atsince24@gmail.com. Located in Kigali, Muhima.",
     keywords: [
         "contact @Since24",
         "@Since24 contact",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
         "gate motor contact Rwanda",
         "automatic gate opener contact Rwanda",
         "installation services contact Rwanda",
-        "premium electronics contact Rwanda",
+        "solar water heater contact Kigali",
         "sustainable technology contact Rwanda",
         "smart home solutions contact Rwanda",
         "professional installation contact Rwanda",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     ],
     openGraph: {
         title: "Contact @Since24 - Get in Touch",
-        description: "Contact @Since24 for premium electronic appliances and professional installation services in Rwanda. Call +250 788 825 011 or email atsince24@gmail.com. Located in Kigali, Muhima.",
+        description: "Contact @Since24 for solar water heaters, water pumps, and gate motors in Rwanda. Call +250 788 825 011 or email atsince24@gmail.com. Located in Kigali, Muhima.",
         url: "https://atsince24.com/contact",
         images: [
             {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary_large_image",
         title: "Contact @Since24 - Get in Touch",
-        description: "Contact @Since24 for premium electronic appliances and professional installation services in Rwanda. Call +250 788 825 011 or email atsince24@gmail.com.",
+        description: "Contact @Since24 for solar water heaters, water pumps, and gate motors in Rwanda. Call +250 788 825 011 or email atsince24@gmail.com.",
         images: ["/images/og-image.jpg"],
     },
     alternates: {
@@ -66,7 +66,7 @@ export default function ContactLayout({
                         "@context": "https://schema.org",
                         "@type": "ContactPage",
                         "name": "Contact @Since24",
-                        "description": "Contact @Since24 for premium electronic appliances and professional installation services in Rwanda",
+                        "description": "Contact @Since24 for solar water heaters, water pumps, and gate motors in Rwanda",
                         "url": "https://atsince24.com/contact",
                         "mainEntity": {
                             "@type": "Organization",

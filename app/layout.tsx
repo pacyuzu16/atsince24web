@@ -59,7 +59,7 @@ export const metadata = {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "@Since24 - Premium Electronic Appliances & Installation Services in Rwanda",
+        alt: "@Since24 - Solar Water Heaters, Water Pumps & Gate Motors in Rwanda",
         type: "image/jpeg",
       },
       {
@@ -110,7 +110,7 @@ export const metadata = {
     "DC.title": "@Since24 - The Art of Simple Life",
     "DC.creator": "@Since24",
     "DC.subject": "Electronic Appliances, Installation Services, Rwanda",
-    "DC.description": "Premium electronic appliances and professional installation services in Rwanda",
+    "DC.description": "Solar water heaters, water pumps, and gate motors supplied and installed in Rwanda",
     "DC.publisher": "@Since24",
     "DC.contributor": "@Since24",
     "DC.date": "2025",
@@ -156,7 +156,7 @@ export default function RootLayout({
               "alternateName": "Since24",
               "url": "https://atsince24.com",
               "logo": "https://atsince24.com/images/logo.png",
-              "description": "Premium electronic appliances and professional installation services in Rwanda",
+              "description": "Solar water heaters, water pumps, and gate motors supplied and installed in Rwanda",
               "foundingDate": "2024",
               "address": {
                 "@type": "PostalAddress",

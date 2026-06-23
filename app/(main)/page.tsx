@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "@Since24 - Premium Electronic Appliances & Installation Services in Rwanda",
+        alt: "@Since24 - Solar Water Heaters, Water Pumps & Gate Motors in Rwanda",
       }
     ],
   },
@@ -70,7 +70,7 @@ export default function Home() {
             "@type": "WebSite",
             "name": "@Since24",
             "url": "https://atsince24.com",
-            "description": "Premium electronic appliances and professional installation services in Rwanda",
+            "description": "Solar water heaters, water pumps, and gate motors supplied and installed in Rwanda",
             "potentialAction": {
               "@type": "SearchAction",
               "target": "https://atsince24.com/search?q={search_term_string}",
@@ -87,7 +87,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "@Since24",
-            "description": "Premium electronic appliances and professional installation services in Rwanda",
+            "description": "Solar water heaters, water pumps, and gate motors supplied and installed in Rwanda",
             "url": "https://atsince24.com",
             "telephone": "+250-788-825-011",
             "email": "atsince24@gmail.com",

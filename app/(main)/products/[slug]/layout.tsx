@@ -13,7 +13,7 @@ interface ProductMetadata {
 const productMetadata: ProductMetadata = {
     "solar-water-heater": {
         title: "Solar Water Heater Rwanda | Eco-Friendly Water Heating Solutions | @Since24",
-        description: "Premium solar water heaters in Rwanda with pressurized and non-pressurized options. Save up to 50% on energy bills with eco-friendly water heating solutions. Professional installation included.",
+        description: "Solar water heaters in Rwanda with pressurized and non-pressurized options. Cut your energy bills by up to 50% with eco-friendly hot water. Professional installation included.",
         keywords: [
             "solar water heater Rwanda",
             "solar water heater Kigali",

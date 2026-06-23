@@ -20,8 +20,8 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    title: "Premium Solar Water Heaters",
-    description: "Harness the power of the sun for efficient, eco-friendly water heating - installed by our own team.",
+    title: "Solar Water Heaters",
+    description: "Efficient, eco-friendly hot water that cuts your energy bills - supplied and installed by our own team.",
     image: "/images/solar-water-heater-install.jpg",
     cta: {
       text: "Explore Products",

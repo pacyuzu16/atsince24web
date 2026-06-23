@@ -93,8 +93,8 @@ export default function ProductsPage() {
             Solar Water Heaters, Water Pumps &amp; Gate Motors
           </h1>
           <p className="text-white/70 max-w-2xl mx-auto mb-8">
-            Discover @since24&apos;s core range - premium solar water heaters, reliable water pumps, and automatic gate
-            openers (gate motors) - with professional installation across Rwanda.
+            Discover @since24&apos;s core range - solar water heaters, water pumps, and automatic gate openers (gate
+            motors) - with professional installation across Rwanda.
           </p>
         </div>
       </section>

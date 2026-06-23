@@ -4,7 +4,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "About @Since24 - Our Story, Mission & Team | Electronic Appliances Rwanda",
-  description: "Learn about @Since24's journey, mission, and values. Founded in 2024, we're dedicated to simplifying everyday living through premium electronic appliances and professional installation services in Rwanda.",
+  description: "Learn about @Since24's journey, mission, and values. Founded in 2024, we're dedicated to simplifying everyday living through solar water heaters, water pumps, and gate motors with professional installation in Rwanda.",
   keywords: [
     "about @Since24",
     "@Since24 company",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "About @Since24 - Our Story, Mission & Team",
-    description: "Learn about @Since24's journey, mission, and values. Founded in 2024, we're dedicated to simplifying everyday living through premium electronic appliances and professional installation services in Rwanda.",
+    description: "Learn about @Since24's journey, mission, and values. Founded in 2024, we're dedicated to simplifying everyday living through solar water heaters, water pumps, and gate motors with professional installation in Rwanda.",
     url: "https://atsince24.com/about",
     images: [
       {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "About @Since24 - Our Story, Mission & Team",
-    description: "Learn about @Since24's journey, mission, and values. Founded in 2024, we're dedicated to simplifying everyday living through premium electronic appliances and professional installation services in Rwanda.",
+    description: "Learn about @Since24's journey, mission, and values. Founded in 2024, we're dedicated to simplifying everyday living through solar water heaters, water pumps, and gate motors with professional installation in Rwanda.",
     images: ["/images/og-image.jpg"],
   },
   alternates: {
@@ -111,13 +111,13 @@ export default function AboutPage() {
               <h2 className="text-3xl font-light tracking-tight text-brand-dark mb-6">Our Story</h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  Founded in 2024, @since24 was born from a vision to transform how people interact with electronic
-                  appliances in their daily lives. We recognized that while technology was advancing rapidly, many
-                  electronic solutions remained complicated, inefficient, and aesthetically unappealing.
+                  Founded in 2024, @since24 started with a simple goal: to make reliable solar water heaters, water
+                  pumps, and gate motors easy to get and properly installed in Rwanda. Too often, good equipment is let
+                  down by poor installation and weak after-sales support - and we set out to change that.
                 </p>
                 <p>
-                  Today, @since24 stands as a testament to that vision, offering premium electronic appliances and
-                  installation services that embody our philosophy: "The art of Simple Life."
+                  Today, @since24 supplies and installs solar water heaters, water pumps, and gate motors for homes and
+                  businesses across the country, guided by our philosophy: "The art of Simple Life."
                 </p>
               </div>
             </div>
@@ -135,16 +135,16 @@ export default function AboutPage() {
             <div className="bg-white rounded-lg p-8 shadow-lg">
               <h3 className="text-2xl font-medium text-brand-dark mb-4">Mission</h3>
               <p className="text-gray-600">
-                To simplify everyday living through thoughtfully designed, energy-efficient electronic appliances and
-                professional installation services that enhance comfort, convenience, and sustainability.
+                To make everyday life simpler with dependable solar water heaters, water pumps, and gate motors -
+                backed by expert installation and honest after-sales support.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-8 shadow-lg">
               <h3 className="text-2xl font-medium text-brand-dark mb-4">Vision</h3>
               <p className="text-gray-600">
-                To be recognized globally as the leading provider of premium electronic solutions that transform living
-                spaces and contribute to a more sustainable future.
+                To become Rwanda's most trusted name for solar water heaters, water pumps, and gate motors - helping
+                more homes and businesses run reliably and efficiently.
               </p>
             </div>
           </div>
@@ -191,7 +191,7 @@ export default function AboutPage() {
                 </li>
                 <li className="flex items-start">
                   <Check className="h-4 w-4 text-brand-blue mr-2 mt-1" />
-                  <span className="text-gray-600 text-sm">Premium materials and components</span>
+                  <span className="text-gray-600 text-sm">Quality materials and components</span>
                 </li>
               </ul>
             </div>
@@ -276,7 +276,7 @@ export default function AboutPage() {
             "@context": "https://schema.org",
             "@type": "AboutPage",
             "name": "About @Since24",
-            "description": "Learn about @Since24's journey, mission, and values. Founded in 2024, we're dedicated to simplifying everyday living through premium electronic appliances and professional installation services in Rwanda.",
+            "description": "Learn about @Since24's journey, mission, and values. Founded in 2024, we're dedicated to simplifying everyday living through solar water heaters, water pumps, and gate motors with professional installation in Rwanda.",
             "url": "https://atsince24.com/about",
             "mainEntity": {
               "@type": "Organization",
@@ -284,7 +284,7 @@ export default function AboutPage() {
               "alternateName": "Since24",
               "url": "https://atsince24.com",
               "logo": "https://atsince24.com/images/logo.png",
-              "description": "Premium electronic appliances and professional installation services in Rwanda",
+              "description": "Solar water heaters, water pumps, and gate motors supplied and installed in Rwanda",
               "foundingDate": "2024",
               "address": {
                 "@type": "PostalAddress",

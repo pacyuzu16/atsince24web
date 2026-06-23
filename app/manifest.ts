@@ -46,14 +46,14 @@ export default function manifest(): MetadataRoute.Manifest {
                 sizes: "1200x630",
                 type: "image/jpeg",
                 form_factor: "wide",
-                label: "Homepage of @Since24 - Premium Electronic Appliances",
+                label: "Homepage of @Since24 - Solar Water Heaters, Water Pumps & Gate Motors",
             },
             {
                 src: "/images/og-image.jpg",
                 sizes: "1200x630",
                 type: "image/jpeg",
                 form_factor: "narrow",
-                label: "Homepage of @Since24 - Premium Electronic Appliances",
+                label: "Homepage of @Since24 - Solar Water Heaters, Water Pumps & Gate Motors",
             },
         ],
         shortcuts: [

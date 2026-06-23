@@ -41,7 +41,7 @@ const products: { [key: string]: Product } = {
     name: "Solar Water Heater",
     description: "Eco-friendly water heating solution with pressurized and non-pressurized options.",
     longDescription:
-      "Our premium Solar Water Heaters harness the power of the sun to provide you with hot water while reducing your energy bills. Available in both pressurized and non-pressurized variants, these systems are designed for durability and efficiency in various climate conditions.",
+      "Our solar water heaters use free energy from the sun to give you hot water while cutting your energy bills. Available in both pressurized and non-pressurized versions, they are built to last and work well in different climate conditions across Rwanda.",
     whyChoose: [
       {
         title: "Significant Energy Savings",
@@ -51,7 +51,7 @@ const products: { [key: string]: Product } = {
       {
         title: "Environmentally Friendly",
         description:
-          "SolarWaterHeater reduces reliance on fossil fuels, decreasing greenhouse gas emissions and contributing to a sustainable future.",
+          "Using solar energy reduces your reliance on fossil fuels and electricity, lowering both your bills and your carbon footprint.",
       },
       {
         title: "Durable and Low Maintenance",
@@ -61,11 +61,11 @@ const products: { [key: string]: Product } = {
       {
         title: "Easy Installation and Integration",
         description:
-          "SolarWaterHeater can be seamlessly integrated into existing hot water systems, making the transition to solar energy straightforward and hassle-free.",
+          "Your solar water heater connects to existing hot water systems, making the switch to solar straightforward and hassle-free.",
       },
     ],
     motivationalBanner:
-      "🌞 Harness the Sun with Solar Water Heater: Efficient, Eco-Friendly, and Economical. Make the Switch Today!",
+      "☀️ Save on energy bills with a solar water heater - efficient, eco-friendly, and built to last. Make the switch today!",
     images: [
       "/images/solar-water-heater-install.jpg",
       "/images/swh-install-team.jpg",
@@ -130,7 +130,7 @@ const products: { [key: string]: Product } = {
       },
     ],
     motivationalBanner:
-      "🔐 Upgrade Your Property with Automatic Gate Opener: Security, Convenience, and Peace of Mind in One Solution!",
+      "🔐 Add security and convenience to your property with an automatic gate opener you can rely on.",
     images: [
       "/images/gate-motors.jpg",
       "https://res.cloudinary.com/ddlhho2lk/image/upload/v1750194482/%40since24/naddpdl4fqyt80zrhx6f.png",
@@ -165,7 +165,7 @@ const products: { [key: string]: Product } = {
       },
       {
         id: "premium",
-        name: "Premium Gate Opener",
+        name: "Smart Gate Opener",
         features: [
           "Smartphone control",
           "Voice assistant integration",

@@ -67,7 +67,7 @@ export default function FeaturedProducts() {
     <section className="py-20 bg-white" ref={productsRef}>
       <div className="container mx-auto">
         <div className="text-center mb-12 animate-on-scroll">
-          <h2 className="text-3xl md:text-4xl font-light tracking-tight text-brand-dark mb-4">Our Premium Products</h2>
+          <h2 className="text-3xl md:text-4xl font-light tracking-tight text-brand-dark mb-4">Our Products</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Explore our core range - solar water heaters, water pumps, and automatic gate openers (gate motors) -
             high-quality solutions with professional installation across Rwanda.
