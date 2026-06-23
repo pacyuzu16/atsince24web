@@ -41,8 +41,8 @@ const slides: Slide[] = [
   {
     id: 3,
     title: "Professional Installation Across Rwanda",
-    description: "Expert supply and installation of solar water heaters, water pumps, and gate motors - flawless setup, every time.",
-    image: "https://res.cloudinary.com/ddlhho2lk/image/upload/c_crop,ar_16:9/v1750194487/%40since24/jgt7pyjj0yditru7qk59.png",
+    description: "Our own team supplies and installs solar water heaters, water pumps, and gate motors - flawless setup, every time.",
+    image: "/images/swh-install-team.jpg",
     cta: {
       text: "Explore Products",
       link: "/products",
