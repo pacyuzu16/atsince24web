@@ -84,7 +84,7 @@ export default function ContactPage() {
     setIsSubmitting(true)
 
     try {
-      const response = await fetch(process.env.NEXT_PUBLIC_FORMSPREE_CONTACT || '', {
+      const response = await fetch("https://formspree.io/f/meepvvgr", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

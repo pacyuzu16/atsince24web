@@ -52,7 +52,7 @@ export function QuoteModal({ open, onOpenChange, productName }: QuoteModalProps)
         subject: `Quote Request - ${formState.product || 'General Inquiry'}`
       }
 
-      const response = await fetch(process.env.NEXT_PUBLIC_FORMSPREE_QUOTE || '', {
+      const response = await fetch("https://formspree.io/f/xbdpqqov", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
