@@ -328,7 +328,7 @@ export default function AboutPage() {
                   {
                     "@type": "Offer",
                     "itemOffered": {
-                      "@type": "Product",
+                      "@type": "Service",
                       "name": "Solar Water Heater",
                       "description": "Eco-friendly solar water heating with pressurized and non-pressurized options"
                     }
@@ -336,7 +336,7 @@ export default function AboutPage() {
                   {
                     "@type": "Offer",
                     "itemOffered": {
-                      "@type": "Product",
+                      "@type": "Service",
                       "name": "Water Pump",
                       "description": "Surface, booster, and submersible borehole pumps for strong, steady water pressure"
                     }
@@ -344,7 +344,7 @@ export default function AboutPage() {
                   {
                     "@type": "Offer",
                     "itemOffered": {
-                      "@type": "Product",
+                      "@type": "Service",
                       "name": "Automatic Gate Opener (Gate Motor)",
                       "description": "Gate motors and automatic openers for sliding and swing gates"
                     }

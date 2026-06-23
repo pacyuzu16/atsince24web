@@ -68,7 +68,7 @@ export default function ProductsLayout({
                                 "@type": "ListItem",
                                 "position": 1,
                                 "item": {
-                                    "@type": "Product",
+                                    "@type": "Service",
                                     "name": "Solar Water Heater",
                                     "description": "Eco-friendly water heating solution with pressurized and non-pressurized options",
                                     "url": "https://atsince24.com/products/solar-water-heater",
@@ -83,7 +83,7 @@ export default function ProductsLayout({
                                 "@type": "ListItem",
                                 "position": 2,
                                 "item": {
-                                    "@type": "Product",
+                                    "@type": "Service",
                                     "name": "Water Pump",
                                     "description": "Surface, booster, and submersible borehole water pumps for strong, steady water pressure",
                                     "url": "https://atsince24.com/products/water-pump",
@@ -98,7 +98,7 @@ export default function ProductsLayout({
                                 "@type": "ListItem",
                                 "position": 3,
                                 "item": {
-                                    "@type": "Product",
+                                    "@type": "Service",
                                     "name": "Automatic Gate Opener (Gate Motor)",
                                     "description": "Gate motors and automatic openers for sliding and swing gates - enhanced security and convenience",
                                     "url": "https://atsince24.com/products/automatic-gate-opener",

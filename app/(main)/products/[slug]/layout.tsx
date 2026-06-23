@@ -122,45 +122,5 @@ export default function ProductLayout({
 }: {
     children: React.ReactNode
 }) {
-    return (
-        <>
-            {children}
-
-            {/* Structured Data for Product Pages */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Product",
-                        "name": "Product Name", // This will be dynamically replaced
-                        "description": "Product description", // This will be dynamically replaced
-                        "url": "https://atsince24.com/products/product-slug", // This will be dynamically replaced
-                        "brand": {
-                            "@type": "Brand",
-                            "name": "@Since24"
-                        },
-                        "manufacturer": {
-                            "@type": "Organization",
-                            "name": "@Since24"
-                        },
-                        "offers": {
-                            "@type": "Offer",
-                            "availability": "https://schema.org/InStock",
-                            "priceCurrency": "RWF",
-                            "seller": {
-                                "@type": "Organization",
-                                "name": "@Since24"
-                            }
-                        },
-                        "serviceType": "Installation Service",
-                        "areaServed": {
-                            "@type": "Country",
-                            "name": "Rwanda"
-                        }
-                    })
-                }}
-            />
-        </>
-    )
+    return <>{children}</>
 } 
