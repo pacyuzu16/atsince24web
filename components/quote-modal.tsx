@@ -48,11 +48,12 @@ export function QuoteModal({ open, onOpenChange, productName }: QuoteModalProps)
       // Add form type to distinguish from contact form
       const formData = {
         ...formState,
+        type: "quote",
         formType: 'Quote Request',
         subject: `Quote Request - ${formState.product || 'General Inquiry'}`
       }
 
-      const response = await fetch("https://formspree.io/f/xbdpqqov", {
+      const response = await fetch("/api/submit", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

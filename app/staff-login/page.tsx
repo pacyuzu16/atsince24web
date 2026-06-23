@@ -26,19 +26,13 @@ export default function StaffLogin() {
     setIsLoading(true)
 
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000))
+      const res = await fetch("/api/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, password }),
+      })
 
-      // TODO: temporary hardcoded credentials for development.
-      // Replace with proper server-side authentication before production use.
-      const adminUsername = "admin"
-      const adminPassword = "123"
-      if (username === adminUsername && password === adminPassword) {
-        // Set cookie for server-side auth check
-        document.cookie = "isAuthenticated=true; path=/; max-age=86400" // 24 hours
-
-        // Also keep localStorage for client-side checks
-        localStorage.setItem("isAuthenticated", "true")
+      if (res.ok) {
         localStorage.setItem("user", JSON.stringify({ name: "Admin", username }))
 
         toast({
@@ -48,6 +42,7 @@ export default function StaffLogin() {
         })
 
         router.push("/admin")
+        router.refresh()
       } else {
         toast({
           title: "Login failed",

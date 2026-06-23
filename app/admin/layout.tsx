@@ -1,6 +1,6 @@
 import type React from "react"
-import { cookies } from "next/headers"
 import { redirect } from "next/navigation"
+import { isAuthenticated } from "@/lib/auth"
 import AdminDashboard from "./AdminLayoutClient"
 
 export const metadata = {
@@ -13,11 +13,8 @@ export default async function AdminLayout({
 }: {
   children: React.ReactNode
 }) {
-  // Server-side authentication check
-  const cookieStore = await cookies()
-  const isAuthenticated = cookieStore.get("isAuthenticated")?.value === "true"
-
-  if (!isAuthenticated) {
+  // Server-side authentication check against a signed session cookie.
+  if (!(await isAuthenticated())) {
     redirect("/staff-login")
   }
 

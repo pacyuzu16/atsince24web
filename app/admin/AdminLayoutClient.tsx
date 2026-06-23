@@ -56,12 +56,13 @@ function AdminDashboard({ children }: AdminDashboardProps) {
     setIsSidebarOpen(false)
   }, [pathname])
 
-  const handleLogout = () => {
-    // Set cookie for server-side auth check
-    document.cookie = "isAuthenticated=false; path=/; max-age=0"
+  const handleLogout = async () => {
+    try {
+      await fetch("/api/logout", { method: "POST" })
+    } catch {
+      // ignore network errors; we still clear local state and redirect
+    }
 
-    // Also keep localStorage for client-side checks
-    localStorage.removeItem("isAuthenticated")
     localStorage.removeItem("user")
 
     toast({
@@ -71,6 +72,7 @@ function AdminDashboard({ children }: AdminDashboardProps) {
     })
 
     router.push("/staff-login")
+    router.refresh()
   }
 
   const isActive = (path: string) => {

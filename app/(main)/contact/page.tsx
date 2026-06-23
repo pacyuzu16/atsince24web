@@ -84,12 +84,12 @@ export default function ContactPage() {
     setIsSubmitting(true)
 
     try {
-      const response = await fetch("https://formspree.io/f/meepvvgr", {
+      const response = await fetch("/api/submit", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formState),
+        body: JSON.stringify({ ...formState, type: "contact" }),
       })
 
       if (response.ok) {
