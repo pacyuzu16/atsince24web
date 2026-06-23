@@ -96,11 +96,9 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
-  // verification: {
-  //   google: "", // Add your Google Search Console verification code here
-  //   yandex: "", // Add your Yandex verification code here (optional)
-  //   bing: "",   // Add your Bing Webmaster verification code here (optional)
-  // },
+  verification: {
+    google: "-9eFxxEedvdSJJOL1czMLBFWmWI-qTgR7Sk3WUxIaP8",
+  },
   alternates: {
     canonical: "https://atsince24.com",
     languages: {
